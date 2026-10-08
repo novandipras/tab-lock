@@ -1,0 +1,9 @@
+.DS_Store
+/*.png
+/native/tab-lock-auth
+/native/auth-config.json
+/native/windows/*.exe
+/native/windows/auth-config.json
+/native/windows/org.simpletablock.auth.json
+/native/windows/bin/
+/native/windows/obj/

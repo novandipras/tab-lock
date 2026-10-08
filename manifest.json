@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Tab Lock",
+  "version": "1.2.14",
+  "description": "Lock pages with individual PINs, a dark blur overlay, and a right-click menu.",
+  "permissions": ["contextMenus", "storage", "webNavigation", "scripting", "nativeMessaging"],
+  "action": { "default_title": "Manage tab locks" },
+  "options_ui": { "page": "manager.html", "open_in_tab": true },
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }]
+}
